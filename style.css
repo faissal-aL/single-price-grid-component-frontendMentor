@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+/* font name : Karla  weights  400 and 700 */
+
+:root{
+    --Cyan: hsl(179, 62%, 43%);
+    --BrightYellow: hsl(71, 73%, 54%);
+    --LightGray: hsl(204, 43%, 93%);
+    --GrayishBlue: hsl(218, 22%, 67%);
+    --font1 : Karla;
+}
+*{
+    font-family: var(--font1);
+}
+html {
+    height: 100%;
+ }
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    background-color: var(--LightGray);
+}
+main{
+    background-color: white;
+    width: 40%;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.325);
+}
+
+.top_container , .why_us, .subscription_container{
+    box-sizing: border-box;
+    padding: 1.6em 2.5em 1em 2.5em;
+}
+        /* top container  */
+.top_container{
+    width: 100%;
+}
+h1{
+    color: var(--Cyan);
+    font-size: 1.6rem;
+}
+h2{
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+.top_header{
+    font-weight: 700;
+    color: var(--BrightYellow);
+}
+p{
+    color: var(--GrayishBlue);
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+}
+        /* bottom left container   */
+.subscription_container{
+    color: white;
+    background-color: var(--Cyan);
+    width: 50%;
+}
+h3{
+    display: flex;
+    align-items: center;
+    font-size: 1.7rem;
+    margin-bottom: 0px;
+    margin-top: 20px;
+}
+span{
+    margin-left: 10px;
+    color: rgba(255, 255, 255, 0.595);
+    font-size: 0.9rem;
+}
+.paragraph_monthly{
+    margin-top: 5px;
+    color: rgba(255, 255, 255, 0.851);
+}
+button{
+    font-weight: 700;
+    width: 90%;
+    height: 45px;
+    background-color: var(--BrightYellow);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.321);
+}
+        /*bottom right container   */
+.why_us{
+    color: white;
+    background-color: hsla(179, 62%, 43%, 0.668);
+    width: 50%;
+}
+ul{
+    list-style-type: none;
+    padding: 0px;
+}
+li{
+    color: rgba(255, 255, 255, 0.701);
+    font-size: 0.85rem;
+    line-height: 1.4em;
+}
+
+@media screen and (width<1000px) {
+    main{
+        width: 70%;
+    }
+}
+
+@media screen and (width<500px) {
+    body{
+        display: block;
+        height: 130%;
+        margin-top: 70px;
+    }
+    main{
+        margin-left: auto;
+        margin-right: auto;
+        width: 85%;
+        flex-direction: column;
+    }
+    .top_container , .why_us, .subscription_container{
+        padding: 0.7em 2em 1em 2em;
+    }
+            /* top container  */
+    .top_container{
+        width: 100%;
+    }
+            /* bottom left container   */
+    .subscription_container{
+        width: 100%;
+    }
+    h3{
+        margin-top: 0px;
+    }
+    button{
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+            /*bottom right container   */
+    .why_us{
+        width: 100%;
+    }
+}
